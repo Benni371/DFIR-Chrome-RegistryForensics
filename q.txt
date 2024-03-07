@@ -1,0 +1,18 @@
+What is the hostname of the computer? When was the OS installed? jackiesw10
+What timezone is jackies computer in (3 letter timezone)? MST
+What is Jackies username? What group is she a part of? j_williamson_administrators
+What version of steghide was jackie using? Was it ever ran? (v.v.v_y/n) 0.5.1_y
+When was steghide last executed (YYYY-MM-DD)? 2024-03-02
+What was Jackies computer private ip address? 10.0.2.15
+
+Chrome
+Where does Jackie probably live? chall1_Canyon_View_Apartments (name of living area, not long/lat or city)
+What is Jackie planning to do? (2 words action, 2 words location)
+chall1_blow_up_provo_temple
+How is Jackie planning to do it?
+chall1_fertilizer_bomb
+Who is Jackie secretly in love with?
+chall1_Jimmer_Fredette
+What is the hidden flag in the data?
+chall1_f3rt@l1z3r_b0mb
+
