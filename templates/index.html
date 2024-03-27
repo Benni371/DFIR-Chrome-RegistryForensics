@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form</title>
+</head>
+<body>
+    <h1>Welcome, {{ session['username'] }}</h2>
+    <h2>Questions</h2>
+    <h3>Challenge 1: Registry</h3>
+    <p>
+        What is the hostname of the computer?</br>
+        What timezone is jackies computer in (3 letter timezone)?</br>
+        What is Jackies username? What group is she a part of (user_name_group)?</br>
+        What version of steghide was jackie using? Was it ever ran? (v.v.v_y/n)</br>
+        When was steghide last executed (YYYY-MM-DD)?</br>
+        What was Jackies computer private ip address?</br>
+    </p>
+    <h3>Challenge 2: Chrome Forensics</h3>
+    <p>
+        Where does Jackie probably live? (name of living area, not long/lat or city)</br>
+        What is Jackie planning to do? (2 words action, 2 words location)</br>
+        How is Jackie planning to do it?</br>
+        Who is Jackie secretly in love with?</br>
+        What is the hidden flag in the data?</br>
+    </p>
+    <hr>
+    <form action="/submit" method="post" autocomplete="off">
+        <label for="data">Submit Flag (challx_flag):</label><br>
+        <input type="text" id="data" name="data" autocomplete="off">
+        <input type="submit" value="Submit">
+    </form>
+    <p>Challenge 1 Correct answers: {{ session.get('chall1_answers', 0) }}/7</p>
+    <p>Challenge 2 Correct answers: {{ session.get('chall2_answers', 0) }}/5</p>
+    {% if answer_already_submitted %}
+    <p style="color:red">The answer has already been submitted or is incorrect</p>
+    {% endif %}
+</body>
+</html>
